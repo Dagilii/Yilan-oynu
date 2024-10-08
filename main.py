@@ -81,16 +81,16 @@ while running:
     if keys[pygame.K_r]:
         sifirla()
 
-    if keys[pygame.K_w] and son_hareket[1] != 1:
+    if (keys[pygame.K_w] or keys[pygame.K_UP]) and son_hareket[1] != 1:
         yon[1]=-1
         yon[0]=0
-    elif keys[pygame.K_s] and son_hareket[1] != -1:
+    elif (keys[pygame.K_s] or keys[pygame.K_DOWN]) and son_hareket[1] != -1:
         yon[1]=1
         yon[0]=0
-    elif keys[pygame.K_a] and son_hareket[0] !=1:
+    elif (keys[pygame.K_a] or keys[pygame.K_LEFT]) and son_hareket[0] !=1:
         yon[0]=-1
         yon[1]=0
-    elif keys[pygame.K_d] and son_hareket[0] != -1:
+    elif (keys[pygame.K_d] or keys[pygame.K_RIGHT]) and son_hareket[0] != -1:
         yon[0]=1
         yon[1]=0
     
